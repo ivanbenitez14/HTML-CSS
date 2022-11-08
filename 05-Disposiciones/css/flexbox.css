@@ -1,0 +1,33 @@
+
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.contenido-1 {
+    background-color: red;
+    border: 1px;
+    /*height: 200px;*/
+    width: 200px;
+}
+
+.contenido-2 {
+    background-color: green;
+    border: 1px;
+    /*height: 200px;*/
+    width: 200px;
+}
+
+.contenido-3 {
+    background-color: blue;
+    border: 1px;
+    /*height: 200px;*/
+    width: 200px;
+}
