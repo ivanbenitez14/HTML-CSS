@@ -1,0 +1,21 @@
+/* (1, 0, 0) corresponde a #id        */
+/* (0, 1, 0) corresponde a .clase     */
+/* (0, 0, 1) corresponde a <etiqueta> */
+/* (0, 0, 0) sin especificidad        */
+
+h1#h1-id.h1-clase {
+    color: darksalmon;
+}
+
+.h1-clase {
+    color: yellow;
+}
+
+h1 {
+    color: blue !important;
+    /* Sobreescribe cualquier especifidad indicada */
+}
+
+p {
+    color: red;
+}
