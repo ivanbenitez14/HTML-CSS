@@ -1,0 +1,51 @@
+
+
+
+.padre {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+
+    /* 
+        transition: transform 1s ease-in 2s;  los seg finales es el tiempo que tarda la animacion en ejecutarse 
+        animation: traslacion 4s ease-in-out infinite forwards alternate;  forwards para que la animacion mantenga el estilo deifinido
+                                                                           infinite para que se ejecute infinitas veces y 
+                                                                           alternate para cambiar la direccion en la cual se ejecuta 
+                                                                           la animacion 
+    */
+
+}
+
+.padre:hover .hijo{
+    animation: movimiento 2s;
+
+    /* 
+        transform: translateX(100%); trasladar el elemento
+        background-color: blueviolet; 
+        animation-play-state: paused; pausar el elemento
+    */
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+}
