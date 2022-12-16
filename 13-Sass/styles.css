@@ -31,7 +31,7 @@ h1 {
   color: black;
   text-transform: uppercase;
   width: 50rem;
-  background-color: red;
+  background-color: yellow;
 }
 
 p {
@@ -55,4 +55,6 @@ p {
 }
 .listado ul li:hover {
   color: red;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
