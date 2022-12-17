@@ -4,7 +4,7 @@
 }
 
 @mixin btn-sm-modify {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
     padding: 0.1rem 1rem;
 }
 
@@ -46,10 +46,20 @@ $color-main: #0075FF;
 }
 
 .main-menu {
+    margin-bottom: 0;
+
     li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         list-style: none;
         display: inline;
+        a {
+            color: #000;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
