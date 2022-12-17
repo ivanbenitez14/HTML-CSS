@@ -46,7 +46,8 @@
 }
 
 .icon-sm i {
-  padding: 0.4rem 0.5rem;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
   color: #0075FF;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3333333333);
@@ -113,9 +114,9 @@ body {
 }
 
 .sec-home {
-  display: flex;
   width: 100%;
   padding: 5rem;
+  display: flex;
   align-items: center;
 }
 .sec-home .home-cta {
@@ -126,6 +127,44 @@ body {
 }
 .sec-home .home-cta .home-title {
   width: 60rem;
+}
+
+.sec-features {
+  width: 100%;
+  padding: 5rem;
+}
+.sec-features .intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec-features .intro h3 {
+  font-size: 2rem;
+}
+.sec-features .intro p {
+  font-size: 1rem;
+  color: #888;
+}
+.sec-features .features {
+  display: flex;
+  gap: 1rem;
+}
+.sec-features .features .text {
+  padding: 2rem 0;
+  max-width: 40%;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feature .description {
+  margin-left: 1rem;
+}
+.sec-features .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
