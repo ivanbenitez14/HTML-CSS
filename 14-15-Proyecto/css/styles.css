@@ -235,4 +235,32 @@ body {
   font-size: 1.1rem;
 }
 
+@media (max-width: 768px) {
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+  .sec-benefits .intro, .sec-benefits .sec-benefits, .sec-benefits .sec-onboarding {
+    text-align: center;
+  }
+  .sec-benefits .intro h3, .sec-benefits .sec-benefits h3, .sec-benefits .sec-onboarding h3 {
+    font-size: 2rem;
+  }
+  .sec-features .intro h3, .sec-benefits .intro h3, .sec-onboarding .intro h3, .sec-features .sec-benefits h3, .sec-benefits .sec-benefits h3, .sec-onboarding .sec-benefits h3, .sec-features .sec-onboarding h3, .sec-benefits .sec-onboarding h3, .sec-onboarding .sec-onboarding h3 {
+    font-size: 2rem;
+  }
+  .sec-features .intro p, .sec-benefits .intro p, .sec-onboarding .intro p, .sec-features .sec-benefits p, .sec-benefits .sec-benefits p, .sec-onboarding .sec-benefits p, .sec-features .sec-onboarding p, .sec-benefits .sec-onboarding p, .sec-onboarding .sec-onboarding p {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
