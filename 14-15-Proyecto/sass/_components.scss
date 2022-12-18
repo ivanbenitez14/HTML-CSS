@@ -9,6 +9,7 @@
 }
 
 $color-main: #0075FF;
+$color-footer: #f4f8fe;
 
 .btn-main {
     @include btn-base();
@@ -52,6 +53,7 @@ $color-main: #0075FF;
         font-size: 1.2rem;
         list-style: none;
         display: inline;
+        margin-right: 2rem;
         a {
             color: #000;
             text-decoration: none;
@@ -73,19 +75,19 @@ $color-main: #0075FF;
     }
 }
 
-.feature {
+.benefit {
     display: flex;
     flex-direction: column;
 
     .icon {
         color: $color-main;
-        font-size: 10rem;
+        font-size: 3rem;
         text-align: center;
     }
 
     .description {
         .title {
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: center;
         }
 
@@ -111,11 +113,11 @@ $color-main: #0075FF;
     justify-content: center;
     i {
         color: $color-main;
-        font-size: 10rem;
+        font-size: 7rem;
         padding: 0;
     }
     .title {
-        margin-top: -2rem;
+        margin-top: 0rem;
         font-size: 1.5 rem;
         font-weight: 600;
     }

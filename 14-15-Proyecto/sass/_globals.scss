@@ -5,6 +5,10 @@
     padding: 5rem;
 }
 
+html {
+    min-width: 100vw;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -38,6 +42,16 @@ body {
         .home-title {
             width: 60rem;
         }
+
+        .home-description {
+            width: 300px;
+        }
+
+        .lead-magnet {
+            .input-col {
+                max-width: 200px;
+            }
+        }
     }
 }
 
@@ -59,13 +73,13 @@ body {
     .features {
         display: flex;
         gap: 1rem;
+        align-items: center;
         .text {
             padding: 2rem 0;
-            max-width: 40%;
             .feature {
                 display: flex;
                 flex-direction: row;
-                align-items: baseline;
+                align-items: center;
                 .description {
                     margin-left: 1rem;
 
@@ -81,8 +95,79 @@ body {
         }
 
         .image {
-
+            max-width: 500px;
         }
 
     }
+}
+
+.sec-benefits {
+    @extend .sec-features, .intro;
+    border-top: 1px solid #ccc;
+}
+
+.sec-kpis {
+    margin: 0;
+    width: 100%;
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .desc {
+            font-size: 1rem;
+            color: #ffffffaa;
+        }
+    }
+}
+
+.sec-onboarding {
+
+    @extend .sec-features, .intro;
+
+    .steps {
+
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+
+    }
+
+}
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url("../assets/img/astro.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    .footer-cta {
+        width: 50%;
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+        }
+
+    }
+
 }
